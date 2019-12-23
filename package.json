@@ -1,0 +1,15 @@
+{
+  "name": "bowl",
+  "version": "1.0.0",
+  "description": "bowl.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bowl.js": "^0.1.4"
+  }
+}
