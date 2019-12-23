@@ -5,21 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="https://unpkg.com/bowl.js/lib/bowl.min.js"></script>
 </head>
 <body>
     hi
-    <script src="https://unpkg.com/bowl.js/lib/bowl.min.js"></script>
     <script>
         var bowl = new Bowl()
         bowl.add([
-          { url: '/jquery-3.4.1.min.js', key: 'app' },
+          { url: '/jquery-3.4.1.min.js', key: 'jquery' },
         ])
         bowl.inject().then(() => {
           // do some stuff
-          $('body').css({
+        })
+        </script>
+        <script>
+           window.onload = function () {
+            $('body').css({
                 background: 'red'
             })
-        })
+           }
         </script>
 </body>
 </html>
